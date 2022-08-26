@@ -1,0 +1,16 @@
+.container{
+    @apply max-w-7xl mx-auto px-2; /* Los prefijos sm y lg no se incluyen en la directiva 'apply' */
+}                                                   /* Los prefijos hacen referencia a media querys especificados abajo. */
+
+@media(min-width: 640px){   /* Esto es lo mismo que el prefijo 'sm' (pantalla chica) */
+    .container{             /* A la clase container con ese tipo de pantalla le aplicamos ese padding */
+        @apply px-6;
+    }
+}
+
+@media(min-width: 1024px){ /* Este es lo mismo que el prefijo lg */
+    .container{
+        @apply px-8;
+    }
+}
+

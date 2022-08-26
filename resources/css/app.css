@@ -1,0 +1,7 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import 'commom.css'; /* Lo importamos a este archivo porque es el unico que se compila. */
+                        /* lo compilamos con npm run dev */
+                        /* los cambios al haber compilado los lleva a la ruta app/public/css/app.css. En este archivo es donde se muestran los estilos de tailwind. */
